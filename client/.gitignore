@@ -1,0 +1,8 @@
+# dep
+/node_modules
+
+
+#prod
+
+/build
+build

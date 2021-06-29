@@ -1,0 +1,9 @@
+.nav-bar-wrapper{
+    padding:0.3rem
+}
+.my-loader{
+    display: flex;
+    justify-content: center;
+    padding-top: .2rem;
+
+}
