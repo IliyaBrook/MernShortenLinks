@@ -1,0 +1,42 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "Mern stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "npm run build --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build",
+    "server": "nodemon app.js",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "client": "npm run start --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run client\" \"npm run server\" "
+  },
+  "engines": {
+    "node": "16.3.0"
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Iliya brook <iliyabrook1987@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.0",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.15",
+    "node": "^16.3.0",
+    "shortid": "^2.2.16",
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "mongodb": "^3.6.9",
+    "nodemon": "^2.0.7"
+  }
+}
